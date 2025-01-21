@@ -107,15 +107,15 @@
 #         print(string[i])
 #     return string
 #Ex 4.1
-s = input("Insira uma palavra: ")
-def contar_caracteres(s):
-    contagem = {} 
-    for i in range(0,len(s),1):
-        print(i)
-        if s[i] in contagem:
-            contagem[s[i]] +=1
-        else:
-            contagem[s[i]] = 1
+# s = input("Insira uma palavra: ")
+# def contar_caracteres(s):
+#     contagem = {} 
+#     for i in range(0,len(s),1):
+#         print(i)
+#         if s[i] in contagem:
+#             contagem[s[i]] +=1
+#         else:
+#             contagem[s[i]] = 1
 
-    print(contagem)
-contar_caracteres(s)
+#     print(contagem)
+# contar_caracteres(s)
