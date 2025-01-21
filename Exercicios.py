@@ -30,12 +30,16 @@
 
 # print(f"{soma_str}")
 
-#Ex 2
+#Ex 1.1
+# nome = input("Insira seu nome:")
+# ano = int(input("Insira o ano do seu nascimento:"))
+# idade = 2025 - ano
 
-#Ex 3
+# print(f"Olá {nome}, sua idade é : {idade}")
+
+#Ex 2
 # print("Controle de Fluxo - Condicionais")
 # print("IF, ELSE, ELIF")
-
 # print("\n")
 # print("Exercicío 1 - Faça um programa que verifique se o número é ímpar ou par.")
 # print("\n")
@@ -48,8 +52,7 @@
 # else: 
 #     print(f"O número {numeroIP} é ímpar")
 
-#Ex 3.1
-
+#Ex 2.1
 # print("Insira as notas do aluno:")
 # nota1 = float(input("Insira á 1°nota:"))
 # nota2 = float(input("Insira á 2°nota:"))
@@ -71,7 +74,7 @@
 # else:
 #     print("REPROVADO!!!!")
 
-#Ex 4
+#Ex 3
 # print("Controle de Fluxo - Laços de Repetição ")
 # print("FOR e WHILE")
 # print("\n")
@@ -81,8 +84,7 @@
 # for i in range(0,numInt):
 #     print(i)
 
-#Ex 4.1
-
+#Ex 3.1
 # num = int(input("Insira um número:"))
 
 # while num >= 0:
@@ -92,8 +94,7 @@
 # for num in while: 
 #     print(f"O maior número é:".)
 
-#Ex 5
-
+#Ex 4
 # DEF
 
 # def inverter_string(s):
@@ -105,11 +106,16 @@
 #     for i in range(len(string)-1, -1 , -1):
 #         print(string[i])
 #     return string
+#Ex 4.1
 s = input("Insira uma palavra: ")
 def contar_caracteres(s):
     contagem = {} 
-    for i in range(len(s)-1,-1,-1):
+    for i in range(0,len(s),1):
         print(i)
-        contagem[i] = s
+        if s[i] in contagem:
+            contagem[s[i]] +=1
+        else:
+            contagem[s[i]] = 1
+
     print(contagem)
 contar_caracteres(s)
